@@ -1,0 +1,607 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.4;
+	color: #3a3a3a;
+  font-size: 1.1em;
+}
+
+p {
+	font-size: 1.1em;
+	margin-bottom: 1.8em;
+  margin: 0 5% 1.8em 5%;
+}
+
+h2,
+h3,
+a {
+	color: #a82e46;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+  margin: 0 5%;
+}
+
+h4 {
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.footer-nav {
+  margin-bottom: 15px;
+}
+
+.main-nav {
+	margin-top: 5px;
+  
+}
+	
+	.main-nav a {
+    display: block;
+		text-align: center;
+		padding: 10px 15px;
+		font-size: .95em;
+		color: #60383e;
+		text-transform: uppercase;
+    
+	}
+
+	.main-nav a:hover {
+		font-weight: bold;
+	}
+
+  .main-nav .selected {
+    font-weight: bold;
+    color: white;
+    background-color: #c67581; 
+  }
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+  padding-top: 300px;
+  height: 450px;
+	color: #fff;
+	background: linear-gradient(#ae3a4b, transparent 80%),
+              linear-gradient(0deg, #fff , transparent),
+              #ae3a4b url('../img/red-nails.jpg') no-repeat center;
+  background-size: cover;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #eed7db;
+	padding: 2em 0;
+  padding-bottom: 10px;
+	margin-top: 30px;
+  border-top: 10px ridge #a82e46;
+}
+ 
+.secondary-content {
+  padding-left: 45px;
+  padding-right: 45px;
+  margin: auto;
+  max-width: 960px;
+}
+
+
+/* ---- Page Elements ---- */
+
+.headline {
+	margin-bottom: 0;
+  font-family: 'Montez', cursive;
+  font-size: 5em;
+  text-shadow: 1px 3px 3px rgba(0,0,0,.8);
+  align-content: center;
+}
+
+/* ---- Footer ---- */
+
+.copyright {
+  font-size: 0.8em;
+  padding: 10px;
+  line-height: 1.8;
+}
+
+.contact {
+  float: left;
+  font-size: 0.9em;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.contact td {
+  text-align: left;
+}
+
+.contact th {
+  width: 35%;
+}
+
+.working-hours {
+  float: right;
+  font-size: 0.9em;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.social {
+  width:35px;
+  height:35px;
+  padding: 5px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.foot {
+  align-content: center;
+}
+
+/* ================================= 
+  HOME PAGE
+==================================== */
+
+.intro {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contactheading {
+  margin-top: 10%;
+}
+
+.desc {
+  font-size: 1.2em;
+}
+
+.feat-imgs {
+  max-width: 28%;
+  margin: 10px;
+  margin-bottom: 40px;
+  float: left;
+  align-content: center;
+  box-shadow: 8px 8px 10px 1px #7c7c7c;
+  border: 4px solid #16070b;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.hours {
+  margin: 0 5%;
+  margin-bottom: 8%;
+  line-height: 1.6;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  text-align: right;
+}
+
+.secondary-content {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  padding: 10px;
+}
+
+.call {
+  font-weight: bold;
+}
+
+.description {
+  margin-bottom: 2%;
+}
+
+.homeinfo {
+  float: left;
+}
+
+/* ================================= 
+  GALLERY PAGE
+==================================== */
+
+.gallery {
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  margin: 5px;
+  border: 3px solid #deb0b7;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); 
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(2,2);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/* ================================= 
+  ABOUT PAGE
+==================================== */
+
+.staffpics {
+  max-width: 100%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  border: 4px solid black;
+  box-shadow: 4px 4px 8px 1px #444;
+}
+
+.main {
+  margin-left: 5%;
+  max-width: 80%;
+}
+
+/* ================================= 
+  TESTIMONIALS PAGE
+==================================== */
+
+.test1 {
+  width: 35%;
+  text-align: left;
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
+
+.test2 {
+  width: 35%;
+  text-align: left;
+  margin-right: 15%;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.testcomm {
+  padding: 5px;
+  border: 1.5px solid #a82e46;
+  box-shadow: 1px 1px 1px 1px #444;
+  background-color: #f2e2e5;
+}
+
+/* ================================= 
+  SERVICES PAGE
+==================================== */
+
+.services {
+  width: 33%;
+}
+
+.options {
+  margin-bottom: 4%;
+}
+
+.labels {
+  margin-bottom: 6%;
+}
+
+.price {
+  margin: 0 2%;
+  margin-bottom: 8%;
+  line-height: 1.6;
+  width: 75%;
+}
+
+.price th {
+  font-weight: normal;
+  font-size: 0.95em;
+}
+
+.price td {
+  font-weight: bold;
+  font-size: 0.95em;
+  text-align: right;
+}
+
+.indent {
+  padding-left: 15%;
+}
+
+.indent2 {
+  padding-left: 25%;
+}
+
+.small {
+  font-size: 0.9em;
+}
+
+.servicepic {
+  max-width: 80%;
+  border: 3px solid black;
+  margin-bottom: 5%;
+  box-shadow: 4px 4px 8px #444;
+}
+
+/* ================================= 
+  CONTACT PAGE
+==================================== */
+
+.contactpic {
+  width: 20px;
+  height: 20px;
+}
+
+.phonepic {
+  width: 24px;
+  height: 24px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media only screen and (max-width: 910px) {
+  .feat-imgs {
+      margin-bottom: 5%;
+  }
+  
+  .center {
+    margin-left: 2%;
+    margin-right: 1%;
+  }
+  
+   iframe {
+    max-width:100%;
+    max-height:100%;
+  }
+  
+  .services {
+    width: 100%;
+  }
+  
+  .servicepic {
+    margin-left: 5%;
+    max-width: 65%;
+  }
+  
+    .test1 {
+    margin-left: 3%;
+    float: left;
+    width: 95%;
+  }
+  
+  .test2 {
+    float: none;
+    margin: 5%;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .feat-imgs, .right {
+    max-width: 80%;
+    float: none;
+    margin: 5%;
+  }
+  
+   .secondary-content {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    margin: 0;
+  }
+  
+  .gallery > div > img {
+  display: block;
+  width: 100%;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+  }
+  
+  .gallery > div:hover > img {
+  transform: none;
+  transition: none;
+  }
+  
+  .homeinfo {
+     float: none;
+  } 
+  
+  .services {
+    width: 100%;
+  }
+  
+  iframe {
+    margin-left: 5%;
+    width: 90%;
+  }
+  
+  .contactheading {
+    margin-top: 2%;
+  }
+  
+  .staffpics {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+   .contact, .working-hours, .social {
+      float: none;
+   }
+  
+  .social {
+    margin-top: 10px;
+  }
+  
+  .contact, .working-hours {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+}
+
+@media (min-width: 769px) {
+
+	body {
+		padding-top: 68px;
+	}
+
+	.main-header {
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+  .servicecontainer {
+    margin: 0;
+    margin-left: 5%;
+  }
+
+	.col {
+		float: left;
+	}
+
+  .mapscol, 
+  .contactcol {
+		width: 50%;
+	}
+
+	.main-nav {
+		text-align: center;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+  .feat-imgs, .secondary-content, .contact-general {
+    float: left;
+  }
+  
+  iframe {
+    max-width:100%;
+    max-height:100%;
+  }
+
+  .contactheading {
+     margin-top: 30%;
+  }
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+@media (min-width: 1025px) {
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+  .contactcol {
+    width: 35%;
+  }
+
+  .mapscol {
+    width: 65%;
+  }
+
+  .secondary-content {
+    float: none;
+  }
+
+  iframe {
+  max-width:100%;
+  max-height:100%;
+  }
+}
+
+@media (min-width: 1260px) {
+
+  .feat-imgs {
+     max-width: 30%;
+  }
+}
